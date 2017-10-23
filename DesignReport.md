@@ -8,8 +8,13 @@ It's ok if the game turns out differently than in the report
 
 ## Introduction
 This software is developed by Group 27 (*pepsi gun*) as part of the Late-term assignment.
-The name of the course is Software Engineering (SC-SC-T-303-HUGB).
+The name of the course is Software Engineering (SC-T-303-HUGB).
 The software is a simple implementation of the popular game *Tic-Tac-Toe*.
 
 ## Classes
 Maybe we can use the noun identification method
+... probably not because we have no documentation to search for nouns in.
+
+## Coding rules
+These are the rules that group members will follow when writing code
+Maybe we could use markdown lists for this section
