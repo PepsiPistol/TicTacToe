@@ -17,12 +17,14 @@ would need.
 The list of classes is as follows:
 - TicTacToe
 - TicTacToeUI
+
 We expect that this list might change once we begin implementing the software.
 
 ## Coding rules
 It's important that the team agrees on some coding rules before 
-starting the coding process. This will 
-- All code is conistently formatted.
+starting the coding process. This will help ensure the following points:
+
+- All code is consistently formatted.
 - It becomes easier to read the code.
 - Precious time won't be lost arguing about coding practises.
 
@@ -31,15 +33,15 @@ These are the rules that group members will follow when writing code:
 ### Curly brackets
 Opening curly bracket in line with function/class name e.g.	
 ~~~~
-	    public class TestClass(){
-		    //Some logic
-		}
+	public class TestClass(){
+	    //Some logic
+	}
 ~~~~
 
 ### Languages
 All comments in the code will be in English.
 
-## Indenting
+### Indenting
 We will use the 'tab' key to indent, not the space bar.
 
 ### Naming conventions
