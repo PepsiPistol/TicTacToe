@@ -18,3 +18,11 @@ Maybe we can use the noun identification method
 ## Coding rules
 These are the rules that group members will follow when writing code
 Maybe we could use markdown lists for this section
+
+- Curly brackets
+	- Matching curly brackets must form a vertical line
+	
+## Images
+Testing inline images. We might make some UML diagrams this way.
+An image: ![Alt](http://cdn1-www.dogtime.com/assets/uploads/gallery/shiba-inu-dog-breed-picutres/8-side.jpg "a dog")
+
