@@ -26,6 +26,18 @@ The list of classes is as follows:
 We expect that this list might change once we begin implementing the software.
 
 ## Design prototype
+As the game is meant to be simple, the team has decided not to add too many features.
+We consider it important to user experience to be able to view the game in a clear 
+and simple way. We want the user to see the tic-tac-toe board and the **x**'s and **o**'s
+entered so far, like when playing the game on a piece of paper. Using a GUI allows us
+to make things much clearer for the users as opposed to using a console.
+
+
+To enter an **x** or an **o**, the user only has to click on an empty square in the grid. 
+
+We intend to include two buttons, as displayed below, one button to start a new game 
+and another to explain the game to novice players.
+
 ![Design prototype](https://i.imgur.com/GCRwzVo.png)
 
 ## Coding rules
@@ -55,9 +67,4 @@ We will use the 'tab' key to indent, not the space bar.
 ### Naming conventions
 All names given to classes and variables will be descriptive. We only use shortcuts that 
 are be unambiguous, like "val" for value. We will use camelCasing.
-
-	
-## Images
-Testing inline images. We might make some UML diagrams this way.
-An image: ![Alt](http://cdn1-www.dogtime.com/assets/uploads/gallery/shiba-inu-dog-breed-picutres/8-side.jpg "a dog")
 
