@@ -12,15 +12,41 @@ The name of the course is Software Engineering (SC-T-303-HUGB).
 The software is a simple implementation of the popular game *Tic-Tac-Toe*.
 
 ## Classes
-Maybe we can use the noun identification method
-... probably not because we have no documentation to search for nouns in.
+The team had a short brainstorm session to decide which classes the software
+would need. 
+The list of classes is as follows:
+- TicTacToe
+- TicTacToeUI
+We expect that this list might change once we begin implementing the software.
 
 ## Coding rules
-These are the rules that group members will follow when writing code
-Maybe we could use markdown lists for this section
+It's important that the team agrees on some coding rules before 
+starting the coding process. This will 
+- All code is conistently formatted.
+- It becomes easier to read the code.
+- Precious time won't be lost arguing about coding practises.
 
-- Curly brackets
-	- Matching curly brackets must form a vertical line
+These are the rules that group members will follow when writing code:
+
+### Curly brackets
+Opening curly bracket in line with function/class name e.g.	
+~~~~
+	    public class TestClass(){
+		    //Some logic
+		}
+~~~~
+
+### Languages
+All comments in the code will be in English.
+
+## Indenting
+We will use the 'tab' key to indent, not the space bar.
+
+### Naming conventions
+All names given to classes and variables will be descriptive. We only use shortcuts that 
+are be unambiguous, like "val" for value. We will use camelCasing.
+
+
 	
 ## Images
 Testing inline images. We might make some UML diagrams this way.
