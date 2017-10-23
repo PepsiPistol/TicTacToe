@@ -26,7 +26,7 @@ The list of classes is as follows:
 We expect that this list might change once we begin implementing the software.
 
 ## Design prototype
-![Alt](https://imgur.com/GCRwzVo)
+![Design prototype](https://i.imgur.com/GCRwzVo.png)
 
 ## Coding rules
 It's important that the team agrees on some coding rules before 
