@@ -8,3 +8,7 @@ repositories {
 dependencies {
 	testCompile 'junit:junit:4.12'
 }
+
+task stage {
+dependsOn installDist
+}
