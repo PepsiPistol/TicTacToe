@@ -11,6 +11,11 @@ This software is developed by Group 27 (*pepsi gun*) as part of the Late-term as
 The name of the course is Software Engineering (SC-T-303-HUGB).
 The software is a simple implementation of the popular game *Tic-Tac-Toe*.
 
+## Layers
+The software will be split up into layers. The user interface will be contained in the 
+_UI layer_ and the game logic itself will be in the _business layer_. Because the software
+doesn't collect any data to be stored in a database, there is no need for a database layer.
+
 ## Classes
 The team had a short brainstorm session to decide which classes the software
 would need. 
@@ -19,6 +24,9 @@ The list of classes is as follows:
 - TicTacToeUI
 
 We expect that this list might change once we begin implementing the software.
+
+## Design prototype
+![Alt](https://imgur.com/GCRwzVo)
 
 ## Coding rules
 It's important that the team agrees on some coding rules before 
@@ -38,7 +46,7 @@ Opening curly bracket in line with function/class name e.g.
 	}
 ~~~~
 
-### Languages
+### Comments
 All comments in the code will be in English.
 
 ### Indenting
@@ -47,7 +55,6 @@ We will use the 'tab' key to indent, not the space bar.
 ### Naming conventions
 All names given to classes and variables will be descriptive. We only use shortcuts that 
 are be unambiguous, like "val" for value. We will use camelCasing.
-
 
 	
 ## Images
