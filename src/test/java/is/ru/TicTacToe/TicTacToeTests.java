@@ -6,6 +6,10 @@ import org.junit.Test;
 
 public class TicTacToeTests {
 
-	//Here is where the unit tests go
-
+	@Test
+	public void testXOnPosition0() {
+		TicTacToe ttt = new TicTacToe();
+		ttt.insertX(0);
+		assertEquals(1,ttt.getValueAtPos(0));
+	}
 }

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="is.ru.TicTacToe.TicTacToeTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-10-23T15:02:34" hostname="DESKTOP-LSK5OV1" time="0.002">
+  <properties/>
+  <testcase name="testXOnPosition0" classname="is.ru.TicTacToe.TicTacToeTests" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
