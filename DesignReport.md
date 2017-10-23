@@ -1,10 +1,6 @@
 # Design Report
-
-This report should be 1-2 pages long. The reason we are doing it is to get a basic idea of what the game should be like, which classes should the program have, which 
-layers does it have etc...
-Some info about this in the monday lecture, 23. okt, at ca. 1:17:00
-We use markdown, pretty sure we can still include pictures.
-It's ok if the game turns out differently than in the report
+This document is intended to explain the basic plan of development and give a rough 
+idea of how the finished product might look and behave.
 
 ## Introduction
 This software is developed by Group 27 (*pepsi gun*) as part of the Late-term assignment.
