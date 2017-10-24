@@ -55,4 +55,51 @@ public class TicTacToeTests {
 		ttt.insert(2);
 		assertEquals(1, ttt.getValueAtPos(2));
 	}
+	
+	@Test
+	public void testGameStillGoing() {
+		TicTacToe ttt = new TicTacToe();
+		ttt.insert(0);
+		ttt.insert(1);
+		ttt.insert(2);
+		assertEquals(0, ttt.getGameStatus());
+	}
+	
+	@Test
+	public void testTopRowP1Won() {
+		TicTacToe ttt = new TicTacToe();
+		ttt.insert(0);
+		ttt.insert(3);
+		ttt.insert(1);
+		ttt.insert(4);
+		ttt.insert(2);
+		assertEquals(1, ttt.getGameStatus());
+	}
+	
+	@Test
+	public void testDiagonalP2Won() {
+		TicTacToe ttt = new TicTacToe();
+		ttt.insert(3);
+		ttt.insert(0);
+		ttt.insert(6);
+		ttt.insert(4);
+		ttt.insert(7);
+		ttt.insert(8);
+		assertEquals(2, ttt.getGameStatus());
+	}
+	
+	@Test
+	public void testDraw() {
+		TicTacToe ttt = new TicTacToe();
+		ttt.insert(0);
+		ttt.insert(4);
+		ttt.insert(1);
+		ttt.insert(2);
+		ttt.insert(6);
+		ttt.insert(3);
+		ttt.insert(5);
+		ttt.insert(7);
+		ttt.insert(8);
+		assertEquals(3, ttt.getGameStatus());
+	}
 }
