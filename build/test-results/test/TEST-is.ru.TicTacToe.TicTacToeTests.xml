@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="is.ru.TicTacToe.TicTacToeTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-10-24T16:19:12" hostname="DESKTOP-LSK5OV1" time="0.003">
+<testsuite name="is.ru.TicTacToe.TicTacToeTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-10-24T18:05:15" hostname="DESKTOP-LSK5OV1" time="0.002">
   <properties/>
-  <testcase name="testXOnPosition0" classname="is.ru.TicTacToe.TicTacToeTests" time="0.002"/>
+  <testcase name="testXOnPosition0" classname="is.ru.TicTacToe.TicTacToeTests" time="0.001"/>
   <testcase name="testGetValueOutOfBounds" classname="is.ru.TicTacToe.TicTacToeTests" time="0.0"/>
   <testcase name="testInsertOnTaken" classname="is.ru.TicTacToe.TicTacToeTests" time="0.0"/>
   <testcase name="testInsertOutOfBounds" classname="is.ru.TicTacToe.TicTacToeTests" time="0.0"/>
