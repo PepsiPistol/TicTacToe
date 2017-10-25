@@ -8,7 +8,7 @@ gradle-app.setting
 !gradle-wrapper.jar
 !build.gradle
 !/build/install/TicTacToe/bin/TicTacToe.bat
-!build/install/TicTacToe/bin/TicTacToe
+!/build/install/TicTacToe/bin/TicTacToe
 
 # Cache of project
 .gradletasknamecache
