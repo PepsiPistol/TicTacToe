@@ -10,6 +10,4 @@ dependencies {
 	compile "com.sparkjava:spark-core:2.6.0"
 }
 
-task stage {
-	dependsOn installDist
-}
+task stage(dependsOn: 'installDist')
