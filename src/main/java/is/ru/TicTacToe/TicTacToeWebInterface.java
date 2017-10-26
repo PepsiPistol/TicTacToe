@@ -6,8 +6,8 @@ import spark.utils.ResourceUtils;
 
 public class TicTacToeWebInterface {
 	public static void main(String[] args) {
+		port(getHerokuAssignedPort());
 		TicTacToe ttt = new TicTacToe();
-		byte player = 1;
 		staticFileLocation("/public");
 		get("/", (req, res) -> {
 			String output = "<!DOCTYPE html 5> " +
@@ -41,15 +41,15 @@ public class TicTacToeWebInterface {
 			return output;
 		});
 		before("/:id", (req, res) -> {
-			byte playerRef = player;
-			if(playerRef == 1) {
-				ttt.insertX(Integer.parseInt(req.params(":id")));
-				playerRef = 2;
-			}else{
-				ttt.insertO(Integer.parseInt(req.params(":id")));
-				playerRef = 2;
-			}
+			ttt.insert(Integer.parseInt(req.params(":id")));
 			res.redirect("/");
 		});
 	}
+	static int getHerokuAssignedPort() {
+        ProcessBuilder processBuilder = new ProcessBuilder();
+        if (processBuilder.environment().get("PORT") != null) {
+            return Integer.parseInt(processBuilder.environment().get("PORT"));
+        }
+        return 4567; //return default port if heroku-port isn't set (i.e. on localhost)
+    }
 }
