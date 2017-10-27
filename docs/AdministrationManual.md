@@ -2,6 +2,7 @@
 Information on how to set up the system if you want to start using it or working on it.
 # Requirements
 You need to have...
+
 0. Access to Github
 1. Your Github account connected to TravisCI
 2. Be a member of the pepsi-pistol organization
