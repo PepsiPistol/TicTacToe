@@ -27,10 +27,10 @@ public class TicTacToeWebInterface {
 						output += "<img src=\"/images/blank.png\" id=\"" + (i*3+j) + "\"> ";
 					}
 					else if(ttt.getValueAtPos(i*3 + j) == 1) {
-						output += "<img src=\"/images/cross.png\" id=\"" + (i*3+j) + "\"> ";
+						output += "<img src=\"/images/cat_regular.png\" id=\"" + (i*3+j) + "\"> ";
 					}
 					else if(ttt.getValueAtPos(i*3 + j) == 2) {
-						output += "<img src=\"/images/circle.png\" id=\"" + (i*3+j) + "\"> ";
+						output += "<img src=\"/images/dog_regular.png\" id=\"" + (i*3+j) + "\"> ";
 					}
 					
 					output += "</a> </td>";
