@@ -1,26 +1,20 @@
 table{
     border-collapse: collapse;
     border-style:hidden;
-    margin: auto;
-    margin-top: 5%;
-    margin-right: 33%;
- 
-
+	height: 70%;
+    width: 37%;
+    margin: 9% 31%;
 }
+
 td{
-    border: 3px solid black;
-    width: 180px; height: 180px;
+    border: 3px solid #757575;
+    width: 33%;
+    height: 33%;
 }
 
-div{
-    width: 180px;
-    height: 180px;
-}
 img{
-	max-width: 100%;
-    max-height: 100%;
-	width: 180px;
-	height: 180px;
+	max-width: 95%;
+    max-height: 95%;
 }
 
 body{
