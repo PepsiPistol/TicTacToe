@@ -22,7 +22,7 @@ public class TicTacToeWebInterface {
 			for(int i = 0; i<3; i++) {
 				output += "<tr> ";
 				for(int j = 0; j<3; j++) {
-					output += "<td> <a href=/"  + (i*3 + j) + "> ";
+					output += "<td> <a href=/field/"  + (i*3 + j) + "> ";
 					if(ttt.getValueAtPos(i*3 + j) == 0) {
 						output += "<img src=\"/images/blank.png\" id=\"" + (i*3+j) + "\"> ";
 					}
@@ -42,7 +42,7 @@ public class TicTacToeWebInterface {
 					"</html> ";
 			return output;
 		});
-		before("/:id", (req, res) -> {
+		before("/field/:id", (req, res) -> {
 			ttt.insert(Integer.parseInt(req.params(":id")));
 			res.redirect("/");
 		});
