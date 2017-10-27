@@ -14,6 +14,8 @@ public class TicTacToeWebInterface {
 							"<html> " +
 								"<head> " +
 								  "<link rel=\"stylesheet\" type=\"text/css\" href=\"/style/style.css\"> " +
+								  "<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>" +
+								  "<script src=\"/scripts/TicTacToeScript.js\"></script>" +
 								"</head> " +
 								"<body> " +
 									"<table> ";
@@ -22,13 +24,13 @@ public class TicTacToeWebInterface {
 				for(int j = 0; j<3; j++) {
 					output += "<td> <a href=/"  + (i*3 + j) + "> ";
 					if(ttt.getValueAtPos(i*3 + j) == 0) {
-						output += "<img src=\"/images/blank.png\"> ";
+						output += "<img src=\"/images/blank.png\" id=\"" + (i*3+j) + "\"> ";
 					}
 					else if(ttt.getValueAtPos(i*3 + j) == 1) {
-						output += "<img src=\"/images/cross.png\"> ";
+						output += "<img src=\"/images/cross.png\" id=\"" + (i*3+j) + "\"> ";
 					}
 					else if(ttt.getValueAtPos(i*3 + j) == 2) {
-						output += "<img src=\"/images/circle.png\"> ";
+						output += "<img src=\"/images/circle.png\" id=\"" + (i*3+j) + "\"> ";
 					}
 					
 					output += "</a> </td>";
