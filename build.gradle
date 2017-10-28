@@ -30,7 +30,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
-task stage(dependsOn: 'installDist')
+task stage(dependsOn: ['installDist','build','clean'])
 
 task generatePdf(type:JavaExec, dependsOn:[classes]) {
    main = 'is.ru.TicTacToe.documentation2pdf'
