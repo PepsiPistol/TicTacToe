@@ -3,18 +3,18 @@ table{
     border-style:hidden;
 	height: 70%;
     width: 37%;
-    margin: 9% 31%;
+    margin: 8% 31%;
 }
 
 td{
     border: 3px solid #757575;
     width: 33%;
     height: 33%;
+    text-align: center;
 }
 
 img{
-	max-width: 95%;
-    max-height: 95%;
+    height: 25%;
 }
 
 body{
