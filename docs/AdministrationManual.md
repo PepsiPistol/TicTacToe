@@ -4,7 +4,7 @@ Information on how to set up the system if you want to start using it or working
 
 
 ## Introduction
-Welcome to the Tic-Tac-Toe Administration manual. Use this manual for instructions on how to use and administer our version of the classic game of Tic-Tac-Toe. 
+Welcome to the Tic-Cat-Dog Administration manual. Use this manual for instructions on how to use and administer our version of the classic game of Tic-Tac-Toe. 
 
 
 
@@ -22,9 +22,6 @@ Note: The system uses Gradle, but it will be installed automatically along with 
 ## Setup
 If you have all the requirements you should start by cloning the [Tic-Tac-Toe repository](https://github.com/PepsiPistol/TicTacToe) from Github to your computer.
 
-
-
-// How to deploy, run and maintain in case of client/server or web application.
 
 ## Launching the system
 The system is hosted online by the cloud application platform [Heroku](https://heroku.com).
