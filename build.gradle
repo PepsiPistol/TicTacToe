@@ -12,6 +12,9 @@ apply plugin: 'java'
 // Apply the application plugin to add support for building an application
 apply plugin: 'application'
 
+//Apply jacoco
+apply plugin: 'jacoco'
+
 // In this section you declare where to find the dependencies of your project
 repositories {
     // Use jcenter for resolving your dependencies.
@@ -23,13 +26,34 @@ dependencies {
     // This dependency is found on compile classpath of this component and consumers.
 	compile "com.sparkjava:spark-core:2.6.0"
 
+	// https://mvnrepository.com/artifact/eu.de-swaef.pdf/Markdown2Pdf
+	compile group: 'eu.de-swaef.pdf', name: 'Markdown2Pdf', version: '2.0.1'
 
     // Use JUnit test framework
     testCompile 'junit:junit:4.12'
-	
 }
 
-task stage(dependsOn: 'installDist')
+task stage(dependsOn: ['installDist','build','clean'])
+build.mustRunAfter clean
+installDist.mustRunAfter build
+
+task generatePdf(type:JavaExec, dependsOn:[classes]) {
+   main = 'is.ru.TicTacToe.documentation2pdf'
+   classpath = sourceSets.main.runtimeClasspath
+}
+
+build.finalizedBy(generatePdf);
 // Define the main class for the application
 mainClassName = 'is.ru.TicTacToe.TicTacToeWebInterface'
+
+jacocoTestReport {
+    reports {
+        xml.enabled true
+        html.enabled true
+    }
+}
+
+test.finalizedBy(jacocoTestReport);
+
+check.dependsOn jacocoTestReport
 

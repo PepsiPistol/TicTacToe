@@ -10,12 +10,13 @@ td{
     border: 3px solid #757575;
     width: 33%;
     height: 33%;
+    text-align: center;
 }
 
 img{
-	max-width: 95%;
-    max-height: 95%;
+    height: 25%;
 }
+
 
 body{
     background-size: 100%;
