@@ -3,7 +3,7 @@ $(document).ready(function(){
 		e.preventDefault();
         $.ajax({
 			method: "GET",
-			url: $(this).attr("id"),
+			url: "field/" + $(this).attr("id"),
 			context: this,
 			success: function(response) {
 				html = response;
