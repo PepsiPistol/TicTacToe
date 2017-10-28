@@ -49,9 +49,11 @@ mainClassName = 'is.ru.TicTacToe.TicTacToeWebInterface'
 jacocoTestReport {
     reports {
         xml.enabled true
-        html.enabled false
+        html.enabled true
     }
 }
+
+test.finalizedBy(jacocoTestReport);
 
 check.dependsOn jacocoTestReport
 
