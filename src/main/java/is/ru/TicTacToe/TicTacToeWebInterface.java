@@ -4,6 +4,12 @@ import static spark.Spark.*;
 import spark.utils.IOUtils;
 import spark.utils.ResourceUtils;
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.Files;
+import java.io.IOException;
+import javax.servlet.http.HttpServletResponse;
+
 public class TicTacToeWebInterface {
 	public static void main(String[] args) {
 		port(getHerokuAssignedPort());
@@ -42,9 +48,58 @@ public class TicTacToeWebInterface {
 					"</html> ";
 			return output;
 		});
+		
 		before("/field/:id", (req, res) -> {
 			ttt.insert(Integer.parseInt(req.params(":id")));
 			res.redirect("/");
+		});
+		
+		get("/designreport", (request, response) ->{
+			try {
+				Path path = Paths.get("build/resources/main/public/DesignReport.pdf");
+				byte[] data = Files.readAllBytes(path);
+		 
+				HttpServletResponse httpServletResponse = response.raw();
+				httpServletResponse.setContentType("application/pdf");
+				httpServletResponse.addHeader("Content-Disposition", "inline; filename=DesignReport.pdf");
+				httpServletResponse.getOutputStream().write(data);
+				httpServletResponse.getOutputStream().close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			return "";
+		});
+		
+		get("/administrationmanual", (request, response) ->{
+			try {
+				Path path = Paths.get("build/resources/main/public/AdministrationManual.pdf");
+				byte[] data = Files.readAllBytes(path);
+		 
+				HttpServletResponse httpServletResponse = response.raw();
+				httpServletResponse.setContentType("application/pdf");
+				httpServletResponse.addHeader("Content-Disposition", "inline; filename=AdministrationManual.pdf");
+				httpServletResponse.getOutputStream().write(data);
+				httpServletResponse.getOutputStream().close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			return "";
+		});
+		
+		get("/developermanual", (request, response) ->{
+			try {
+				Path path = Paths.get("build/resources/main/public/DeveloperManual.pdf");
+				byte[] data = Files.readAllBytes(path);
+		 
+				HttpServletResponse httpServletResponse = response.raw();
+				httpServletResponse.setContentType("application/pdf");
+				httpServletResponse.addHeader("Content-Disposition", "inline; filename=DeveloperManual.pdf");
+				httpServletResponse.getOutputStream().write(data);
+				httpServletResponse.getOutputStream().close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			return "";
 		});
 	}
 	static int getHerokuAssignedPort() {
