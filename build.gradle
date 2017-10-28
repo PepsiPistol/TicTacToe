@@ -31,6 +31,8 @@ dependencies {
 }
 
 task stage(dependsOn: ['installDist','build','clean'])
+build.mustRunAfter clean
+installDist.mustRunAfter build
 
 task generatePdf(type:JavaExec, dependsOn:[classes]) {
    main = 'is.ru.TicTacToe.documentation2pdf'
