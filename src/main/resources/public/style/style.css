@@ -23,3 +23,30 @@ body{
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.winnerStatus {
+    position: absolute;
+    left: 30%;
+    top: 80%;
+    width: 40%;
+    height: 10%;
+}
+
+#status0 {
+    visibility: hidden;
+}
+
+#status1 {
+    visibility: visible;
+    background-image: url("/images/cat_regular.png");
+}
+
+#status2 {
+    visibility: visible;
+    background-image: url("/images/dog_regular.png");
+}
+
+#status3 {
+    visibility: visible;
+    background-image: url("/images/background.png");
+}

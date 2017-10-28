@@ -10,6 +10,8 @@ $(document).ready(function(){
 				var filtSRC = $(html).find("img#" + $(this).attr("id")).attr("src");
 				console.log(filtSRC);
 				$(this).attr("src", filtSRC);
+				var gameStatus = $(html).filter("div.winnerStatus");
+				$(".winnerStatus").replaceWith(gameStatus);
 			}
 		});
     });

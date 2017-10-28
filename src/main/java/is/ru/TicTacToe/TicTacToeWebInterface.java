@@ -38,6 +38,7 @@ public class TicTacToeWebInterface {
 				output += "</tr> ";
 			}
 			output += 		"</table> " +
+							"<div class=\"winnerStatus\" id=\"status" + ttt.getGameStatus() + "\"></div>" +
 						"</body> " +
 					"</html> ";
 			return output;
