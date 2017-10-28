@@ -27,19 +27,36 @@ body{
 
 #replayButton{
     position: absolute;
-    left: 40%;
-    top: 90%;
-    height: 10%;
-    width: 20%;
-    background: red;
+    left: 37.5%;
+    top: 80%;
+    height: 20%;
+    width: 25%;
+    background-image: url("/images/reset.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
+
 
 .winnerStatus {
     position: absolute;
     left: 30%;
-    top: 80%;
+    top: 0%;
     width: 40%;
-    height: 10%;
+    height: 15%;
+    z-index: -1;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+
+
 }
 
 #status0 {
@@ -48,15 +65,14 @@ body{
 
 #status1 {
     visibility: visible;
-    background-image: url("/images/cat_regular.png");
+    background-image: url("/images/catwin.png");
 }
 
 #status2 {
     visibility: visible;
-    background-image: url("/images/dog_regular.png");
+    background-image: url("/images/dogwin.png");
 }
 
 #status3 {
-    visibility: visible;
-    background-image: url("/images/background.png");
+    visibility: hidden;
 }
