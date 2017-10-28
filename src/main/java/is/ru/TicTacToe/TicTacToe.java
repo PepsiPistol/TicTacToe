@@ -41,6 +41,13 @@ public class TicTacToe {
 		return false;
 	}
 	
+	public void clear() {
+		for(int i = 0; i < 9; i++) {
+			grid[i] = 0;
+		}
+		player = 0;
+	}
+
 	//returns byte as game status:
 	//0: game is still going
 	//1: player 0 won

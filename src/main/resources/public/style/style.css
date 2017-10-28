@@ -25,6 +25,15 @@ body{
     background-position: center;
 }
 
+#replayButton{
+    position: absolute;
+    left: 40%;
+    top: 90%;
+    height: 10%;
+    width: 20%;
+    background: red;
+}
+
 .winnerStatus {
     position: absolute;
     left: 30%;
