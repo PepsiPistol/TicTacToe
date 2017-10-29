@@ -75,6 +75,60 @@ public class TicTacToeTests {
 		ttt.insert(2);
 		assertEquals(1, ttt.getGameStatus());
 	}
+
+	@Test
+	public void testMiddleRowP1Won() {
+		TicTacToe ttt = new TicTacToe();
+		ttt.insert(3);
+		ttt.insert(0);
+		ttt.insert(4);
+		ttt.insert(1);
+		ttt.insert(5);
+		assertEquals(1, ttt.getGameStatus());
+	}
+
+	@Test
+	public void testBottomRowP1Won() {
+		TicTacToe ttt = new TicTacToe();
+		ttt.insert(6);
+		ttt.insert(3);
+		ttt.insert(7);
+		ttt.insert(0);
+		ttt.insert(8);
+		assertEquals(1, ttt.getGameStatus());
+	}
+	@Test
+	public void testLeftColumnP1Won() {
+		TicTacToe ttt = new TicTacToe();
+		ttt.insert(0);
+		ttt.insert(1);
+		ttt.insert(3);
+		ttt.insert(5);
+		ttt.insert(6);
+		assertEquals(1, ttt.getGameStatus());
+	}
+	@Test
+	public void testMiddleColumnP2Won() {
+		TicTacToe ttt = new TicTacToe();
+		ttt.insert(0);
+		ttt.insert(3);
+		ttt.insert(1);
+		ttt.insert(4);
+		ttt.insert(6);
+		ttt.insert(5);
+		assertEquals(2, ttt.getGameStatus());
+	}
+	@Test
+	public void testRightColumnP1Won() {
+		TicTacToe ttt = new TicTacToe();
+		ttt.insert(2);
+		ttt.insert(3);
+		ttt.insert(5);
+		ttt.insert(4);
+		ttt.insert(8);
+		assertEquals(1, ttt.getGameStatus());
+	}
+
 	
 	@Test
 	public void testDiagonalP2Won() {
@@ -86,6 +140,17 @@ public class TicTacToeTests {
 		ttt.insert(7);
 		ttt.insert(8);
 		assertEquals(2, ttt.getGameStatus());
+	}
+	
+	@Test
+	public void testDiagonalP1Won() {
+		TicTacToe ttt = new TicTacToe();
+		ttt.insert(2);
+		ttt.insert(0);
+		ttt.insert(4);
+		ttt.insert(1);
+		ttt.insert(6);
+		assertEquals(1, ttt.getGameStatus());
 	}
 	
 	@Test
