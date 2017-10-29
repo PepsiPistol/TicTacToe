@@ -19,16 +19,16 @@ We use a collection of services in our implementation:
 	* Takes care of continuous integration.
 * Heroku
 	* A cloud service that hosts our application.
-* Apache Spark
-	* A framework to write web-applications in Java.
-* Selenium
-	* A software testing framework for web-applications. It runs our end-to-end tests.
 * Codecov
 	* A service that hosts our code coverage reports.
 * SauceLabs
 	* A cloud-based testing platform that tests selenium code written locally on an external machine.
 
 # Other tools
+* Java Spark
+	* A framework to write web-applications in Java.
+* Selenium
+	* A software testing framework for web-applications. It runs our end-to-end tests.
 * Jacoco
 	* A library for java that generates our code coverage reports.
 * Gradle
