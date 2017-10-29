@@ -5,7 +5,7 @@ Information on how to set up the system if you want to start using it or working
 
 ## Introduction
 Welcome to the Tic-Cat-Dog Administration manual. Use this manual for instructions on how to use and administer our version of the classic game of Tic-Tac-Toe. 
-
+**Note, this program only works with Google Chrome**
 
 
 ## Requirements

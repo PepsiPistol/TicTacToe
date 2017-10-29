@@ -4,6 +4,7 @@ assignment for students of computer science at Reykjavík University.
 The repository contains an implementation of Tic-Tac-Toe, programmed in Java.
 
 Our game is hosted online at https://tic-cat-dog.herokuapp.com/
+**Note, this program only works with Google Chrome**
 
 [![codecov](https://codecov.io/gh/PepsiPistol/TicTacToe/branch/master/graph/badge.svg)](https://codecov.io/gh/PepsiPistol/TicTacToe)
 

@@ -1,5 +1,6 @@
 # Introduction
 This project is a practice in continuous integration and test driven development. The task of the project is to write the game Tic-Tac-Toe using what we have learned about these practices. Version control is handled via git and is hosted on Github, [link here](https://github.com/PepsiPistol/TicTacToe.git).
+**Note, this program only works with Google Chrome**
 
 # Services and tools
 Following is a list of tools and services that were used to make the game. 
