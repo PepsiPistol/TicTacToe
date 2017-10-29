@@ -4,3 +4,6 @@ addons:
   sauce_connect:
     username: "PepsiGun"
     access_key: "6f27147a-345a-4a0f-a5d2-85c4453cf6f0"
+    
+script:
+    - ./gradlew test

@@ -43,9 +43,10 @@ dependencies {
 
 }
 
-task stage(dependsOn: ['installDist','build','clean'])
+task stage(dependsOn: ['installDist','build','clean','test'])
 build.mustRunAfter clean
 installDist.mustRunAfter build
+test.mustRunAfter installDist
 
 task generatePdf(type:JavaExec, dependsOn:[classes]) {
    main = 'is.ru.TicTacToe.documentation2pdf'
@@ -58,7 +59,7 @@ task selenium(type: Test, dependsOn: installDist) {
 }
 
 build.finalizedBy(generatePdf);
-build.finalizedBy(selenium);
+test.finalizedBy(selenium);
 
 // Define the main class for the application
 mainClassName = 'is.ru.TicTacToe.TicTacToeWebInterface'
