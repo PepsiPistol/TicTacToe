@@ -45,7 +45,7 @@ dependencies {
 
 }
 
-task stage(dependsOn: ['installDist','clean','test', 'generatePdf'])
+task stage(dependsOn: ['installDist','clean','build'])
 build.mustRunAfter clean
 test.mustRunAfter installDist
 
