@@ -12,6 +12,10 @@ apply plugin: 'java'
 // Apply the application plugin to add support for building an application
 apply plugin: 'application'
 
+sourceSets {
+  selenium
+}
+
 //Apply jacoco
 apply plugin: 'jacoco'
 
@@ -31,18 +35,33 @@ dependencies {
 
     // Use JUnit test framework
     testCompile 'junit:junit:4.12'
+	
+	// Compile selenium for end-to-end testing.
+	seleniumCompile 'junit:junit:4.12'
+	seleniumCompile 'org.seleniumhq.selenium:selenium-java:3.6.0'
+	
+	// https://mvnrepository.com/artifact/com.saucelabs/sauce_junit
+	testCompile group: 'com.saucelabs', name: 'sauce_junit', version: '2.1.23'
+
 }
 
-task stage(dependsOn: ['installDist','build','clean'])
+task stage(dependsOn: ['installDist','clean','test'])
 build.mustRunAfter clean
-installDist.mustRunAfter build
+test.mustRunAfter installDist
 
 task generatePdf(type:JavaExec, dependsOn:[classes]) {
    main = 'is.ru.TicTacToe.documentation2pdf'
    classpath = sourceSets.main.runtimeClasspath
 }
 
+task selenium(type: Test, dependsOn: installDist) {
+  testClassesDir = sourceSets.selenium.output.classesDir
+  classpath = sourceSets.selenium.runtimeClasspath
+}
+
 build.finalizedBy(generatePdf);
+test.finalizedBy(selenium);
+
 // Define the main class for the application
 mainClassName = 'is.ru.TicTacToe.TicTacToeWebInterface'
 
