@@ -12,6 +12,11 @@ apply plugin: 'java'
 // Apply the application plugin to add support for building an application
 apply plugin: 'application'
 
+sourceSets {
+  selenium
+}
+
+
 // In this section you declare where to find the dependencies of your project
 repositories {
     // Use jcenter for resolving your dependencies.
@@ -28,6 +33,14 @@ dependencies {
 
     // Use JUnit test framework
     testCompile 'junit:junit:4.12'
+	
+	// Compile selenium for end-to-end testing.
+	seleniumCompile 'junit:junit:4.12'
+	seleniumCompile 'org.seleniumhq.selenium:selenium-java:3.6.0'
+	
+	// https://mvnrepository.com/artifact/com.saucelabs/sauce_junit
+	testCompile group: 'com.saucelabs', name: 'sauce_junit', version: '2.1.23'
+
 }
 
 task stage(dependsOn: ['installDist','build','clean'])
@@ -43,3 +56,11 @@ build.finalizedBy(generatePdf);
 // Define the main class for the application
 mainClassName = 'is.ru.TicTacToe.TicTacToeWebInterface'
 
+task selenium(type: Test, dependsOn: installDist) {
+  testClassesDir = sourceSets.selenium.output.classesDir
+  classpath = sourceSets.selenium.runtimeClasspath
+
+  doFirst {
+    'build/install/TicTacToe/bin/TicTacToe.bat'.execute()
+  }
+}
