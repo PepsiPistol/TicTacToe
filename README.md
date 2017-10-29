@@ -3,13 +3,14 @@ Welcome to PepsiPistol's Tic-Tac-Toe repository. This is a software engineering
 assignment for students of computer science at Reykjavík University.
 The repository contains an implementation of Tic-Tac-Toe, programmed in Java.
 
-Our game is hosted online: https://tic-cat-dog.herokuapp.com/
+Our game is hosted online at https://tic-cat-dog.herokuapp.com/
 
 The following documentations are available:
 * [Design report](https://tic-cat-dog.herokuapp.com/designreport)
 * [Administration manual](https://tic-cat-dog.herokuapp.com/administrationmanual)
 * [Developer manual](https://tic-cat-dog.herokuapp.com/developermanual)
 
+ 
 # Services
 We use a collection of services in our implementation:
 * Travis
@@ -18,16 +19,17 @@ We use a collection of services in our implementation:
 	* A cloud service that hosts our application.
 * Apache Spark
 	* A framework to write web-applications in Java.
-* Jacoco
-	* A library for java that generates our code coverage reports.
 * Selenium
 	* A software testing framework for web-applications. It runs our end-to-end tests.
-* Gradle
-	* A build tool. It automates the whole building process. 
-* JDK
-	* Java Development Kit. Necessary to develop with Java.
 * Codecov
 	* A service that hosts our code coverage reports.
-* Markdown2Pdf
-	* A service that convert our documentation to .pdf format to be hosted online.
+* SauceLabs
+	* A cloud-based testing platform that tests selenium code written locally on an external machine.
 
+# Other tools
+* Jacoco
+	* A library for java that generates our code coverage reports.
+* Gradle
+	* A build tool. It automates the whole building process. 
+* Markdown2Pdf
+	* A tool that convert our documentation to .pdf format to be hosted online.
