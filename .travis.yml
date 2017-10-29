@@ -1,2 +1,5 @@
 language: java
-
+deploy:
+    provider: heroku
+    api_key: 93f011b7-c7d9-4189-9c5a-b0a38b43aaa6
+    app: tic-cat-dog
