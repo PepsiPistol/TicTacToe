@@ -22,6 +22,7 @@ public class TicTacToeWebInterface {
 								  "<link rel=\"stylesheet\" type=\"text/css\" href=\"/style/style.css\"> " +
 								  "<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>" +
 								  "<script src=\"/scripts/TicTacToeScript.js\"></script>" +
+								  "<title>Tic-Cat-Dog</title>" +
 								"</head> " +
 								"<body> " +
 									"<table> ";
