@@ -4,6 +4,15 @@ addons:
   sauce_connect:
     username: "PepsiGun"
     access_key: "6f27147a-345a-4a0f-a5d2-85c4453cf6f0"
-    
+deploy:
+    provider: heroku
+    api_key: 93f011b7-c7d9-4189-9c5a-b0a38b43aaa6
+    app: tic-cat-dog
+before_script:
+  - chmod +x gradlew
 script:
-    - ./gradlew test
+  - ./gradlew check
+  - ./gradlew jacocoTestReport
+  - ./gradlew test
+after_success:
+  - bash <(curl -s https://codecov.io/bash)

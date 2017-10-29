@@ -45,6 +45,8 @@ public class TicTacToeWebInterface {
 				output += "</tr> ";
 			}
 			output += 		"</table> " +
+							"<div class=\"winnerStatus\" id=\"status" + ttt.getGameStatus() + "\"></div>" +
+							"<div id=\"replayButton\"></div>" + 
 						"</body> " +
 					"</html> ";
 			return output;
@@ -52,6 +54,11 @@ public class TicTacToeWebInterface {
 		
 		before("/field/:id", (req, res) -> {
 			ttt.insert(Integer.parseInt(req.params(":id")));
+			res.redirect("/");
+		});
+
+		before("/reset", (req, res) -> {
+			ttt.clear();
 			res.redirect("/");
 		});
 		

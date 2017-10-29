@@ -16,6 +16,8 @@ sourceSets {
   selenium
 }
 
+//Apply jacoco
+apply plugin: 'jacoco'
 
 // In this section you declare where to find the dependencies of your project
 repositories {
@@ -62,4 +64,15 @@ test.finalizedBy(selenium);
 
 // Define the main class for the application
 mainClassName = 'is.ru.TicTacToe.TicTacToeWebInterface'
+
+jacocoTestReport {
+    reports {
+        xml.enabled true
+        html.enabled true
+    }
+}
+
+test.finalizedBy(jacocoTestReport);
+
+check.dependsOn jacocoTestReport
 

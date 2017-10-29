@@ -102,4 +102,30 @@ public class TicTacToeTests {
 		ttt.insert(8);
 		assertEquals(3, ttt.getGameStatus());
 	}
+
+	@Test
+	public void testClearPos() {
+		TicTacToe ttt = new TicTacToe();
+		ttt.insert(0);
+		ttt.insert(4);
+		ttt.insert(6);
+
+		ttt.clear();
+
+		assertEquals(0, ttt.getValueAtPos(0));
+		assertEquals(0, ttt.getValueAtPos(4));
+		assertEquals(0, ttt.getValueAtPos(6));
+	}
+
+	@Test
+	public void testClearPlayer() {
+		TicTacToe ttt = new TicTacToe();
+		ttt.insert(0);
+		ttt.insert(4);
+		ttt.insert(6);
+
+		ttt.clear();
+
+		assertEquals(0, ttt.player);
+	}
 }
