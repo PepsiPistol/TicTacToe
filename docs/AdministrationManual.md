@@ -20,8 +20,11 @@ The following are the requirements to run the system on your computer:
 Note: The system uses Gradle, but it will be installed automatically along with the system.
 
 ## Setup
-If you have all the requirements you should start by cloning the [Tic-Tac-Toe repository](https://github.com/PepsiPistol/TicTacToe) from Github to your computer.
-
+If you have all the requirements you should start by cloning the [Tic-Tac-Toe repository](https://github.com/PepsiPistol/TicTacToe) from Github to your computer. Next, login to heroku (if on windows, you must use command prompt. Git bash is not supported for login). Finally, add the heroku git as a git remote with:
+~~~~
+heroku git:remote -a tic-cat-dog 
+~~~~
+You can check whether you are connected by using Heroku open.
 
 ## Launching the system
 The system is hosted online by the cloud application platform [Heroku](https://heroku.com).
