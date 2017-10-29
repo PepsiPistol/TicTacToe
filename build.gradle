@@ -43,9 +43,8 @@ dependencies {
 
 }
 
-task stage(dependsOn: ['installDist','build','clean','test'])
+task stage(dependsOn: ['installDist','clean','test'])
 build.mustRunAfter clean
-installDist.mustRunAfter build
 test.mustRunAfter installDist
 
 task generatePdf(type:JavaExec, dependsOn:[classes]) {
