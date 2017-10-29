@@ -52,15 +52,14 @@ task generatePdf(type:JavaExec, dependsOn:[classes]) {
    classpath = sourceSets.main.runtimeClasspath
 }
 
-build.finalizedBy(generatePdf);
-// Define the main class for the application
-mainClassName = 'is.ru.TicTacToe.TicTacToeWebInterface'
-
 task selenium(type: Test, dependsOn: installDist) {
   testClassesDir = sourceSets.selenium.output.classesDir
   classpath = sourceSets.selenium.runtimeClasspath
-
-  doFirst {
-    'build/install/TicTacToe/bin/TicTacToe.bat'.execute()
-  }
 }
+
+build.finalizedBy(generatePdf);
+build.finalizedBy(selenium);
+
+// Define the main class for the application
+mainClassName = 'is.ru.TicTacToe.TicTacToeWebInterface'
+
