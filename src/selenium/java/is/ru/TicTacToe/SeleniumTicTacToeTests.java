@@ -97,7 +97,7 @@ public class SeleniumTicTacToeTests extends SeleniumTestWrapper {
    WebElement Winner = driver.findElement(By.className("winnerStatus"));
    assertEquals("status2", Winner.getAttribute("id"));
    }	
-
+/*
   @Test
   public void testDevMan() throws Exception {
   driver.get(baseUrl+"/developermanual");
@@ -121,4 +121,5 @@ public class SeleniumTicTacToeTests extends SeleniumTestWrapper {
   WebElement plugin = driver.findElement(By.id("plugin"));
   assertEquals("application/pdf", plugin.getAttribute("type"));
  }
+*/ 
 }
