@@ -17,7 +17,6 @@ img{
     height: 25%;
 }
 
-
 body{
     background-size: 100%;
     background-image: url("/images/background.png");
@@ -37,7 +36,9 @@ body{
     background-position: center;
 }
 
-
+#replayButton:hover{
+    cursor: pointer;
+}
 
 .winnerStatus {
     position: absolute;
