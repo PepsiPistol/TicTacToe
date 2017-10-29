@@ -5,6 +5,8 @@ The repository contains an implementation of Tic-Tac-Toe, programmed in Java.
 
 Our game is hosted online at https://tic-cat-dog.herokuapp.com/
 
+[![codecov](https://codecov.io/gh/PepsiPistol/TicTacToe/branch/master/graph/badge.svg)](https://codecov.io/gh/PepsiPistol/TicTacToe)
+
 The following documentations are available:
 * [Design report](https://tic-cat-dog.herokuapp.com/designreport)
 * [Administration manual](https://tic-cat-dog.herokuapp.com/administrationmanual)
